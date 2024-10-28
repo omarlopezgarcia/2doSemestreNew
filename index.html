@@ -12,11 +12,13 @@
     <title>ODS - Team 19</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="general.css">
 
     <link rel="stylesheet" href="styles/carrousel-automatico.css">
     <link rel="stylesheet" href="styles/time-line.css">
@@ -40,16 +42,13 @@
 
         <ul class="menu">
             <div class="links">
-                <a href="#segunda" class="menu__link">1</a>
-                <a href="#tercera" class="menu__link">2</a>
-                <a href="#cuarta" class="menu__link">3</a>
-                <a href="#quinta" class="menu__link">4</a>
-                <a href="#sexta" class="menu__link">5</a>
-                <a href="#septima" class="menu__link">6</a>
-                <a href="#octava" class="menu__link">7</a>
-                <a href="#novena" class="menu__link">8</a>
-                <a href="#decima" class="menu__link">9</a>
-                <a href="#onceava" class="menu__link">10</a>
+                <a href="#segunda" class="menu__link">Inicio</a>
+                <a href="#tercera" class="menu__link">Temas</a>
+                <a href="#cuarta" class="menu__link">Timeline</a>
+                <a href="#quinta" class="menu__link">Mapa Interactivo</a>
+                <a href="#octava" class="menu__link">Las 17 ODS</a>
+                <a href="#decima" class="menu__link"><i class="fab fa-youtube"></i></a>
+                <a href="#footer" class="menu__link"><i class="fas fa-user"></i></a>
             </div>
             <label for="chk" class="hide-menu-btn">
                 <i class="material-icons close">clear</i>
@@ -67,6 +66,10 @@
             <div class="text-center">
                 <h2 class="text-5xl font-bold text-white">Objetivos de Desarrollo Sostenible</h2>
                 <p class="text-xl mt-4 text-gray-200">Promoviendo un futuro sostenible y equitativo para todos.</p>
+                <!-- CALENDARIO CÍVICO -->
+                <div id="showDate" class="calendarie"></div>
+                <script src="scripts/controller-calendarie.js"></script>
+                <!-- CALENDARIO CÍVICO -->
                 <button class="bg-blue-600 px-6 py-3 mt-6 rounded hover:bg-blue-700 text-white">Explorar</button>
             </div>
         </div>
@@ -902,11 +905,9 @@
     <!-- QUINTA SECTION -->
     <section id="quinta">
         <div class="flex-grow w-full p-16 space-y-20">
-            <header class="text-center mb-10">
-                <h1 class="text-6xl font-extrabold text-indigo-400 sm:text-7xl" style="color: rgb(34, 34, 218);">
-                    Mapa interactivo de los Objetivos de Desarrollo Sostenible (ODS)
-                </h1>
-            </header>
+            <div class="header">
+                Mapa Interactivo de los Objetivos de Desarrollo Sostenible (ODS)
+            </div>
             <section
                 class="section-card p-16 flex flex-col sm:flex-row items-center justify-between sm:space-x-16 mb-24">
                 <!-- Descripción del mapa -->
@@ -939,9 +940,6 @@
     <!-- QUINTA SECTION -->
     <!-- SEXTA SECTION -->
     <section id="sexta">
-        <div class="header">
-            Mapa Interactivo de los Objetivos de Desarrollo Sostenible (ODS)
-        </div>
 
         <div class="ods-info">
             Haz clic en un país para ver su información.
@@ -1158,12 +1156,11 @@
                     </div>
                 </div>
             </div>
-            <script src="scripts/carrusel de imagenes parte 2.js"></script>
         </center>
     </section>
     <!-- SÉPTIMA SECTION -->
     <!-- OCTAVA SECTION -->
-    <section id="octava">
+    <section id="octava"><br>
         <h1 class="text-green-500 text-5xl font-bold text-center mt-16 mb-8">
             Leyendas descriptivas 17 ODS
         </h1>
@@ -1211,7 +1208,7 @@
             <!-- Card de Objetivo: Fin de la pobreza -->
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.p1MV7F0AONXsrwXP2zjLaQHaHa&pid=Api&P=0&h=180"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-17.jpg/320px-Sustainable_Development_Goal-es-17.jpg"
                         alt="Fin de la pobreza">
                     <h3>Fin de la pobreza</h3>
                 </div>
@@ -1229,13 +1226,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://th.bing.com/th?q=Imagen+Del+ODS+2&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=es-XL&cc=PE&setlang=es&adlt=moderate&t=1&mw=247"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sustainable_Development_Goal-es-16.jpg/320px-Sustainable_Development_Goal-es-16.jpg"
                         alt="">
                     <h3>Hambre cero</h3>
                 </div>
                 <div class="face back">
                     <h3>Hambre cero</h3>
-                    <p>Hambre cero: Eliminar el hambre, asegurar el acceso de todas las personas a una alimentación
+                    <p>Eliminar el hambre, asegurar el acceso de todas las personas a una alimentación
                         suficiente y
                         nutritiva durante todo el año, con especial atención a los más vulnerables, incluidos los bebés.
                         Promover la agricultura sostenible, apoyar a los pequeños agricultores y mejorar la
@@ -1249,12 +1246,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.eeZlIiXOkQV5iULgNGeEogHaHa&pid=Api&P=0&h=180 alt=">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sustainable_Development_Goal-es-15.jpg/320px-Sustainable_Development_Goal-es-15.jpg">
                     <h3>Salud y bienestar</h3>
                 </div>
                 <div class=" face back">
                     <h3>Salud y bienestar</h3>
-                    <p>Salud y bienestar: Garantizar el acceso a servicios de salud esenciales, reducir la mortalidad
+                    <p>Garantizar el acceso a servicios de salud esenciales, reducir la mortalidad
                         materna,
                         acabar con las epidemias de enfermedades transmisibles como el VIH/SIDA y malaria, reducir las
                         enfermedades no transmisibles y promover el bienestar mental. Asegurar una cobertura sanitaria
@@ -1268,12 +1266,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.YhLvxqJA0IbdKvMbSi9PtAHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sustainable_Development_Goal-es-14.jpg/320px-Sustainable_Development_Goal-es-14.jpg">
                     <h3>Educación de calidad</h3>
                 </div>
                 <div class=" face back">
                     <h3>Educación de calidad</h3>
-                    <p>Educación de calidad: Asegurar que todos los niños y niñas completen una educación primaria y
+                    <p>Asegurar que todos los niños y niñas completen una educación primaria y
                         secundaria
                         gratuita, equitativa y de calidad. Fomentar el acceso a una educación técnica, profesional y
                         superior
@@ -1288,12 +1287,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.UE32w7g1bzOUGOFI-zZ_1AHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sustainable_Development_Goal-es-13.jpg/320px-Sustainable_Development_Goal-es-13.jpg">
                     <h3>Igualdad de género</h3>
                 </div>
                 <div class=" face back">
                     <h3>Igualdad de género</h3>
-                    <p>Igualdad de género: Eliminar todas las formas de discriminación contra las mujeres y niñas en el
+                    <p>Eliminar todas las formas de discriminación contra las mujeres y niñas en el
                         ámbito
                         público y privado. Esto incluye poner fin a la violencia de género, el matrimonio infantil y la
                         mutilación genital femenina. Fomentar la participación plena y efectiva de las mujeres en los
@@ -1308,12 +1308,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.Zv6-Fr_z-kjziqVVOy26zwHaHa&pid=Api&P=0&h=1800">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-12.jpg/320px-Sustainable_Development_Goal-es-12.jpg">
                     <h3>Agua limpia y saneamiento</h3>
                 </div>
                 <div class=" face back">
                     <h3>Agua limpia y saneamiento</h3>
-                    <p>Agua limpia y saneamiento: Garantizar el acceso universal y equitativo al agua potable y al
+                    <p>Garantizar el acceso universal y equitativo al agua potable y al
                         saneamiento
                         adecuado para todos, prestando especial atención a las personas en situación de vulnerabilidad.
                         Mejorar
@@ -1329,12 +1330,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.l2kJ1176CldDjej8k9SLfQHaEK&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-11.jpg/320px-Sustainable_Development_Goal-es-11.jpg">
                     <h3>Energía asequible y no contaminante</h3>
                 </div>
                 <div class=" face back">
                     <h3>Energía asequible y no contaminante</h3>
-                    <p>Energía asequible y no contaminante: Garantizar el acceso universal a servicios de energía
+                    <p>Garantizar el acceso universal a servicios de energía
                         asequibles,
                         fiables y modernos. Incrementar el uso de energías renovables en la matriz energética mundial,
                         mejorar
@@ -1351,18 +1353,16 @@
             <div class="card">
                 <div class="face front">
                     <img
-                        src="https://th.bing.com/th?q=ODS+8+Logo+Alta+Calidad&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=es-XL&cc=PE&setlang=es&adlt=moderate&t=1&mw=247">
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sustainable_Development_Goal-es-10.jpg/320px-Sustainable_Development_Goal-es-10.jpg">
                     <h3>Trabajo decente y crecimiento económico</h3>
                 </div>
                 <div class=" face back">
                     <h3>Trabajo decente y crecimiento económico</h3>
-                    <p>Trabajo decente y crecimiento económico: Promover políticas económicas inclusivas que aseguren el
+                    <p>Promover políticas económicas inclusivas que aseguren el
                         crecimiento económico sostenido, inclusivo y sostenible. Esto incluye la creación de empleos de
                         calidad,
                         la reducción del desempleo juvenil y el apoyo al emprendimiento y la innovación. También busca
-                        garantizar derechos laborales y mejorar las condiciones laborales, especialmente en sectores
-                        clave de la
-                        economía.
+                        garantizar derechos laborales y mejorar las condiciones laborales.
                     </p>
                     <div class="link">
                         <a href="#">Details</a>
@@ -1372,12 +1372,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.SthL5iKe5YiH8AbFGNagZQHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sustainable_Development_Goal-es-09.jpg/320px-Sustainable_Development_Goal-es-09.jpg">
                     <h3>Industria, innovación e infraestructura</h3>
                 </div>
                 <div class=" face back">
                     <h3>Industria, innovación e infraestructura</h3>
-                    <p>Industria, innovación e infraestructura: Desarrollar infraestructuras sostenibles, resilientes y
+                    <p>Desarrollar infraestructuras sostenibles, resilientes y
                         de
                         calidad, especialmente en países menos desarrollados. Fomentar la industrialización inclusiva y
                         sostenible, promover la innovación y asegurar el acceso equitativo a tecnologías modernas, en
@@ -1392,12 +1393,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse3.explicit.bing.net/th?id=OIP.bfcknl9r-_jpvvLXqK3-rwHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sustainable_Development_Goal-es-08.jpg/320px-Sustainable_Development_Goal-es-08.jpg">
                     <h3>Reducción de las desigualdades</h3>
                 </div>
                 <div class=" face back">
                     <h3>Reducción de las desigualdades</h3>
-                    <p>Reducción de las desigualdades: Reducir la desigualdad dentro de los países y entre ellos. Esto
+                    <p>Reducir la desigualdad dentro de los países y entre ellos. Esto
                         incluye
                         mejorar la inclusión social, económica y política para todas las personas, sin importar su raza,
                         género,
@@ -1413,18 +1415,19 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.21uyd44PCRwfGCo_YuAKRAHaHd&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Sustainable_Development_Goal-es-07.jpg/320px-Sustainable_Development_Goal-es-07.jpg">
                     <h3>Ciudades y comunidades sostenibles</h3>
                 </div>
                 <div class=" face back">
                     <h3>Ciudades y comunidades sostenibles</h3>
-                    <p>Ciudades y comunidades sostenibles: Hacer que las ciudades y asentamientos humanos sean
+                    <p>Hacer que las ciudades y asentamientos humanos sean
                         inclusivos,
                         seguros y sostenibles. Esto incluye proporcionar acceso adecuado a viviendas asequibles,
                         transporte
                         público eficiente, y mejorar la gestión de los desechos. También busca reducir los impactos de
                         los
-                        desastres, fortalecer la planificación urbana y conservar el patrimonio cultural y natural.
+                        desastres, fortalecer la planificación urbana, etc.
                     </p>
                     <div class="link">
                         <a href="#">Details</a>
@@ -1434,17 +1437,18 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.Nd4OKIv_O6oPZZKKv1mFAQHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sustainable_Development_Goal-es-06.jpg/320px-Sustainable_Development_Goal-es-06.jpg">
                     <h3>Producción y consumo responsables</h3>
                 </div>
                 <div class=" face back">
                     <h3>Producción y consumo responsables</h3>
-                    <p>Producción y consumo responsables: Garantizar patrones sostenibles de producción y consumo
+                    <p>Garantizar patrones sostenibles de producción y consumo
                         mediante la
                         gestión eficiente de los recursos naturales y la reducción de desechos. Fomentar la reducción,
                         reutilización y reciclaje, así como prácticas de producción más sostenibles. También aboga por
                         una mayor
-                        concienciación y responsabilidad entre los consumidores.
+                        concienciación y responsable.
                     </p>
                     <div class="link">
                         <a href="#">Details</a>
@@ -1454,12 +1458,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP._M7fWdeBn5Akd4boLKv4lwAAAA&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sustainable_Development_Goal-es-05.jpg/320px-Sustainable_Development_Goal-es-05.jpg">
                     <h3>Acción por el clima</h3>
                 </div>
                 <div class=" face back">
                     <h3>Acción por el clima</h3>
-                    <p>Acción por el clima: Tomar medidas urgentes para combatir el cambio climático y sus impactos.
+                    <p>Tomar medidas urgentes para combatir el cambio climático y sus impactos.
                         Fortalecer
                         la resiliencia y la capacidad de adaptación a los desastres relacionados con el clima. Esto
                         implica
@@ -1475,12 +1480,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.ONR73JuGm2dBNyxau1m_4AHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sustainable_Development_Goal-es-04.jpg/320px-Sustainable_Development_Goal-es-04.jpg">
                     <h3>Vida submarina</h3>
                 </div>
                 <div class=" face back">
                     <h3>Vida submarina</h3>
-                    <p>Vida submarina: Conservar y utilizar de manera sostenible los océanos, mares y recursos marinos
+                    <p>Conservar y utilizar de manera sostenible los océanos, mares y recursos marinos
                         para el
                         desarrollo sostenible. Proteger los ecosistemas marinos, reducir la contaminación de los océanos
                         y
@@ -1496,12 +1502,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.bm3OIpF6NN_7ihAyR1KQvAHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sustainable_Development_Goal-es-03.jpg/320px-Sustainable_Development_Goal-es-03.jpg">
                     <h3>Vida de ecosistemas terrestres</h3>
                 </div>
                 <div class=" face back">
                     <h3>Vida de ecosistemas terrestres</h3>
-                    <p>Vida de ecosistemas terrestres: Proteger, restaurar y promover el uso sostenible de los
+                    <p>Proteger, restaurar y promover el uso sostenible de los
                         ecosistemas
                         terrestres, incluyendo la gestión sostenible de los bosques, la lucha contra la desertificación
                         y la
@@ -1517,12 +1524,13 @@
 
             <div class="card">
                 <div class="face front">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.QaguKKHMwiQzFaNJq5gFswHaHa&pid=Api&P=0&h=180">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Sustainable_Development_Goal-es-02.jpg/320px-Sustainable_Development_Goal-es-02.jpg">
                     <h3>Paz, justicia e instituciones sólidas</h3>
                 </div>
                 <div class=" face back">
                     <h3>Paz, justicia e instituciones sólidas</h3>
-                    <p>Paz, justicia e instituciones sólidas: Promover sociedades pacíficas e inclusivas, con acceso a
+                    <p>Promover sociedades pacíficas e inclusivas, con acceso a
                         la
                         justicia para todos y la creación de instituciones eficaces, responsables e inclusivas. Esto
                         incluye
@@ -1544,7 +1552,7 @@
                 </div>
                 <div class=" face back">
                     <h3>Alianzas para lograr los objetivos</h3>
-                    <p>Alianzas para lograr los objetivos: Fortalecer la cooperación internacional para el desarrollo
+                    <p>Fortalecer la cooperación internacional para el desarrollo
                         sostenible
                         mediante asociaciones globales y el intercambio de conocimientos, tecnología y recursos
                         financieros.
@@ -1566,7 +1574,7 @@
                 </div>
                 <div class=" face back">
                     <h3>Estos 17 ODS </h3>
-                    <p>Estos 17 ODS son interdependientes y buscan abordar los principales desafíos del desarrollo
+                    <p>Son interdependientes y buscan abordar los principales desafíos del desarrollo
                         mundial,
                         equilibrando las dimensiones económica, social y ambiental para crear un mundo más justo y
                         sostenible
@@ -1722,12 +1730,12 @@
 
     <br><br><br>
     <!-- Pie de página -->
-    <footer class="bg-gradient-to-r from-blue-900 to-purple-900 text-gray-200 py-8 w-full">
+    <footer id="footer" class="bg-gradient-to-r from-blue-900 to-purple-900 text-gray-200 py-8 w-full">
         <div class="max-w-full mx-auto px-4">
             <div class="flex flex-wrap justify-between items-start space-y-12 md:space-y-0 md:flex-row">
                 <!-- Sección Energía -->
                 <div class="flex flex-col space-y-6 w-full md:w-1/3">
-                    <h2 class="text-2xl font-bold mb-4 text-green-400">Energía</h2>
+                    <h2 class="text-2xl font-bold mb-4 text-green-400"><br><br><br></h2>
                     <p class="text-lg text-gray-300">Soluciones para mejorar la energía no contaminante.</p>
                     <div class="flex space-x-6 mt-4">
                         <a href="#" class="text-gray-200 hover:text-blue-400 transition-colors duration-300"><i
@@ -1744,10 +1752,14 @@
                 </div>
 
                 <!-- Sección Sostenibilidad - Centrada -->
-                <div class="flex flex-col items-center justify-center space-y-6 w-full md:w-1/3 text-center h-[12vh]">
-                    <h2 class="text-xl font-bold mb-4 text-green-400">Sostenibilidad</h2>
-                    <p class="text-lg text-gray-300">+34 912 345 678</p>
-                    <p class="text-lg text-gray-300">contacto@ejemplo.com</p>
+                <div class="flex flex-col space-y-6 w-full md:w-1/3">
+                    <center>
+                        <h2 class="text-2xl font-bold mb-4 text-green-400">NOSOTROS</h2>
+                        <p class="text-lg text-gray-300">Jorge Vilcapuma - jorge.vilcapuma.t@vallegrande.edu.pe</p>
+                        <p class="text-lg text-gray-300">Omar López - omar.lopez@vallegrande.edu.pe</p>
+                        <p class="text-lg text-gray-300">Angelina Napaico - angelina.napaico.valencia@vallegrande.edu.pe
+                        </p>
+                    </center>
                 </div>
 
                 <!-- Sección Innovación - Centrando -->
@@ -1759,7 +1771,8 @@
 
             <!-- Derechos reservados -->
             <div class="mt-12 text-center border-t border-gray-600 pt-6">
-                <p class="text-sm text-gray-400">&copy; 2024. Todos los derechos reservados.</p>
+                <h6><i class="fa fa-copyright" aria-hidden="true"></i> Objetivos de Desarrollo Sostenible por <a>Team 19
+                        - AS241S2</a></h6>
             </div>
         </div>
     </footer>
