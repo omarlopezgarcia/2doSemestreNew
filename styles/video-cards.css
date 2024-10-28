@@ -1,0 +1,82 @@
+    /* Tarjetas de video */
+    .video-card {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Títulos y texto dentro de las tarjetas */
+    .video-card h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    /* Texto dentro de las tarjetas */
+
+    .video-card p {
+        color: #e2e8f0;
+        font-size: 1rem;
+        /* Aumento de tamaño de texto */
+        line-height: 1.8;
+        /* Mejora la legibilidad */
+        padding-top: 1rem;
+    }
+
+    /* Estilos específicos para cada tarjeta */
+    .video-card-blue {
+        background: linear-gradient(to right, #4299e1, #38b2ac, #319795);
+    }
+
+    .video-card-purple {
+        background: linear-gradient(to right, #9f7aea, #ed64a6, #f56565);
+    }
+
+    .video-card-orange {
+        background: linear-gradient(to right, #ed8936, #ecc94b, #ed64a6);
+    }
+
+    .video-card-indigo {
+        background: linear-gradient(to right, #667eea, #9f7aea, #ed64a6);
+    }
+
+    /* Botón cargar más */
+    .load-more-btn {
+        background: linear-gradient(to right, #319795, #38b2ac);
+        color: #fff;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        font-weight: 700;
+        transition: background-color 0.3s ease;
+        text-transform: uppercase;
+    }
+
+    .load-more-btn:hover {
+        background: linear-gradient(to right, #2c7a7b, #285e61);
+    }
+
+    /* Ajuste de relación de aspecto */
+    .aspect-w-16 {
+        aspect-ratio: 16/9;
+    }
+
+    /* Diseño responsivo */
+    @media (max-width: 640px) {
+        .video-card {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .load-more-btn {
+            padding: 0.5rem 1.5rem;
+        }
+    }

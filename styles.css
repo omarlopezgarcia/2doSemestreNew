@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 2.5em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    border-bottom: 4px solid #1565c0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #f6f6f6;
+    font-weight: 800;
+}
+
+/*Barra de Navegación*/
+
+.navbar {
+    height: 70px;
+    background: #000000;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    padding: 0 20%;
+    color: rgb(255, 255, 255);
+}
+
+.close {
+    font-size: 30px;
+    color: white;
+}
+
+
+.logo {
+    height: 80px;
+    width: auto;
+    line-height: 80px;
+    float: left;
+}
+
+
+.menu {
+    line-height: 70px;
+    float: right;
+    font-size: 20px;
+}
+
+.menu__link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.3s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 70px;
+}
+
+.menu__link:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #3498db;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -9;
+}
+
+@media screen and (max-width: 800px) {
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+
+    .links {
+        margin-top: 20%;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 20px 0;
+        line-height: normal;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .menu__link {
+        display: block;
+        padding: 20px;
+        color: white;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+}
